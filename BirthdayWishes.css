@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #6a7d81, #3a4452);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card {
+    position: relative;
+    background-color: #fff;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 20px 30px 20px rgba(1, 1, 1, 0.2);
+    width: 600px;
+    height: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#scratchCard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+#message {
+    z-index: 5;
+    position: relative;
+    padding: 20px;
+}
+
+#message h1 {
+    color: #333;
+}
+
+#message p {
+    color: #666;
+    line-height: 1.6;
+}
+
+#surpriseButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#surpriseButton:hover {
+    background-color: #ff85c1;
+}
